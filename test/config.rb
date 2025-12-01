@@ -3,7 +3,7 @@
 #     GRANT EXECUTE ON dbms_lock TO ruby;
 $dbuser = "ruby"
 $dbpass = "oci8"
-$dbname = nil
+$dbname = "127.0.0.1:1521/systempdb"
 
 # for test_bind_string_as_nchar in test_encoding.rb
 ENV['ORA_NCHAR_LITERAL_REPLACE'] = 'TRUE' if OCI8.client_charset_name.include? 'UTF8'
